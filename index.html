@@ -1,111 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- Meta information for browser compatibility and SEO -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Quiz website</title>
-    <meta name="description" content="A simple quiz using HTML, CSS and Javascript">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Styling -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Font for better typography -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+	<!-- Meta information for browser compatibility and SEO -->
+	<meta charset="utf-8">
+	<meta content="IE=edge" http-equiv="X-UA-Compatible">
+	<title>Quiz website</title>
+	<meta content="A simple quiz using HTML, CSS and Javascript" name="description">
+	<meta content="width=device-width, initial-scale=1" name="viewport"><!-- Styling -->
+	<link href="style.css" rel="stylesheet"><!-- Google Font for better typography -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <main class="main">
-        <!-- Header Section -->
-        <header class="header">
-            <a href="#" class="logo">Quiz</a>
-
-            <!-- Navigation Menu -->
-            <nav class="navbar" aria-label="Main Navigation">
-                <a href="#" class="active">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-
-        <!-- Main Content Container -->
-        <div class="container">
-            <!-- Quiz Section -->
-            <section class="quiz-section" aria-label="Quiz Section">
-                <div class="quiz-box">
-                    <h1>Quiz</h1>
-                    <div class="quiz-header">
-                        <span></span>
-                        <span class="header-score">Score: 0 / 20</span>
-                    </div>
-
-                    <!-- Question Text -->
-                    <h2 class="question-text">What does HTML stand for?</h2>
-                    <!-- Options will be loaded dynamically here -->
-                    <div class="option-list" aria-label="List of Options">
-                    </div>
-
-                    <!-- Quiz Footer with Next Button -->
-                    <div class="quiz-footer">
-                        <span class="question-total"></span>
-                        <button class="next-btn">Next</button>
-                    </div>
-                </div>
-
-                <!-- Result Box -->
-                <div class="result-box" aria-label="Quiz Results">
-                    <h2>Quiz result!</h2>
-                    <div class="percentage-container">
-                        <div class="circular-progress">
-                            <span class="progress-value">0%</span>
-                        </div>
-                        <span class="score-text">Your score is 0 out of 5</span>
-                    </div>
-
-                    <!-- Buttons to try again or go home -->
-                    <div class="buttons">
-                        <button class="tryAgain-btn">Try again</button>
-                        <button class="goHome-btn">Go to home</button>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Home Section -->
-            <section class="home" aria-label="Home Section">
-                <div class="home-content">
-                    <h1>Quiz website</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Illo voluptates quo eveniet sequi adipisci, fugit, porro dolor aspernatur nam molestiae ut?
-                        Dicta nisi natus accusamus deserunt omnis possimus voluptatibus iste!
-                    </p>
-                    <button class="start-btn">Start quiz</button>
-                </div>
-            </section>
-        </div>
-    </main>
-
-    <!-- Popup for Quiz Guide -->
-    <div class="popup-info" aria-label="Quiz Guide">
-        <h2>Quiz guide</h2>
-        <span class="info">1. Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-        <span class="info">2. Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-        <span class="info">3. Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-        <span class="info">4. Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-        <span class="info">5. Lorem ipsum dolor sit amet, consectetur adipisicing.</span>
-        
-        <!-- Exit and Continue Buttons -->
-        <div class="btn-group">
-            <button class="info-btn exit-btn">Exit quiz</button>
-            <a href="#" class="info-btn continue-btn">Continue</a>
-        </div>
-    </div>
-
-    <!-- JavaScript Files -->
-    <script src="questions.js" async defer></script>
-    <script src="script.js" async defer></script>
+	<main class="main">
+		<!-- Header Section -->
+		<header class="header">
+			<a class="logo" href="#">Quiz</a> <!-- Navigation Menu -->
+			<nav aria-label="Main Navigation" class="navbar">
+				<a class="active" href="#">Home</a> <a href="#">About</a> <a href="#">Services</a> <a href="#">Contact</a>
+			</nav>
+		</header><!-- Main Content Container -->
+		<div class="container">
+			<!-- Quiz Section -->
+			<section aria-label="Quiz Section" class="quiz-section">
+				<div class="quiz-box">
+					<h1>Quiz</h1>
+					<div class="quiz-header">
+						<span></span> <span class="header-score">Score: 0 / 20</span>
+					</div><!-- Question Text -->
+					<h2 class="question-text">What does HTML stand for?</h2><!-- Options will be loaded dynamically here -->
+					<div aria-label="List of Options" class="option-list"></div><!-- Quiz Footer with Next Button -->
+					<div class="quiz-footer">
+						<span class="question-total"></span> <button class="next-btn">Next</button>
+					</div>
+				</div><!-- Result Box -->
+				<div aria-label="Quiz Results" class="result-box">
+					<h2>Quiz result!</h2>
+					<div class="percentage-container">
+						<div class="circular-progress">
+							<span class="progress-value">0%</span>
+						</div><span class="score-text">Your score is 0 out of 5</span>
+					</div><!-- Buttons to try again or go home -->
+					<div class="buttons">
+						<button class="tryAgain-btn">Try again</button> <button class="goHome-btn">Go to home</button>
+					</div>
+				</div>
+			</section><!-- Home Section -->
+			<section aria-label="Home Section" class="home">
+				<div class="home-content">
+					<h1>Quiz website</h1>
+					<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptates quo eveniet sequi adipisci, fugit, porro dolor aspernatur nam molestiae ut? Dicta nisi natus accusamus deserunt omnis possimus voluptatibus iste!</p><button class="start-btn">Start quiz</button>
+				</div>
+			</section>
+		</div>
+	</main><!-- Popup for Quiz Guide -->
+	<div aria-label="Quiz Guide" class="popup-info">
+		<h2>Quiz guide</h2><span class="info">1. Lorem ipsum dolor sit amet, consectetur adipisicing.</span> <span class="info">2. Lorem ipsum dolor sit amet, consectetur adipisicing.</span> <span class="info">3. Lorem ipsum dolor sit amet, consectetur adipisicing.</span> <span class="info">4. Lorem ipsum dolor sit amet, consectetur adipisicing.</span> <span class="info">5. Lorem ipsum dolor sit amet, consectetur adipisicing.</span> <!-- Exit and Continue Buttons -->
+		<div class="btn-group">
+			<button class="info-btn exit-btn">Exit quiz</button> <a class="info-btn continue-btn" href="#">Continue</a>
+		</div>
+	</div><!-- JavaScript Files -->
+	<script async defer src="questions.js">
+	</script> 
+	<script async defer src="script.js">
+	</script>
 </body>
-
 </html>
